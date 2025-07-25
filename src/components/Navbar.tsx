@@ -60,8 +60,8 @@ const Navbar: React.FC = () => {
                 className="w-11 h-11 relative rounded-full overflow-hidden"
               >
                 <img
-                  src="/companyLogo.png"
-                  alt="Stallion Supreme Logo"
+                  src="/amazingMehsana.jpg"
+                  alt="Amazing Mahesana Logo"
                   className="w-full h-full object-cover rounded-full"
                 />
               </motion.div>
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                Stallion Supreme
+                Amazing Mahesana
               </motion.span>
               <motion.span
                 className="text-sm text-primary/90"
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                by amazing mahesana
+                by Nikhil Patel
               </motion.span>
             </div>
           </motion.a>

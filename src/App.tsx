@@ -14,7 +14,7 @@ const App: React.FC = () => {
       icon: <BoltIcon className="w-6 h-6" />,
     },
     {
-      text: "Stallion Supreme – For the Bold, For the Brands.",
+      text: "Amazing Mahesana – For the Bold, For the Brands.",
       icon: <SparklesIcon className="w-6 h-6" />,
     },
     {
@@ -38,7 +38,7 @@ const App: React.FC = () => {
         <div className="container relative">
           <div className="text-center">
             <h1 className="heading-xl text-white mb-6">
-              Stallion Supreme
+              Amazing Mahesana
               <span className="block text-2xl mt-4 text-primary">Social Media Marketing</span>
             </h1>
             <p className="text-xl mb-8 max-w-2xl mx-auto text-white/80">
@@ -95,7 +95,7 @@ const App: React.FC = () => {
           <div className="text-center">
          
             <p className="text-sm text-white/60">
-              © {new Date().getFullYear()} Stallion Supreme. All rights reserved.
+              © {new Date().getFullYear()} Amazing Mahesana. All rights reserved.
             </p>
           </div>
         </div>

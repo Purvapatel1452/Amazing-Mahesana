@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           </p> */}
           <div className="mt-4">
             <p>“From Scratch to Viral – That's Stallion Style.”</p>
-            <p>“Stallion Supreme – For the Bold, For the Brands.”</p>
+            <p>“Amazing Mahesana – For the Bold, For the Brands.”</p>
             <p>“Content That Converts, Reports That Matter.”</p>
             <p>“Why Just Exist? When You Can Dominate!”</p>
           </div>
