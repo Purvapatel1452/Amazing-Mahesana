@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
           from_email: formData.from_email,
           contact_number: formData.contact_number,
           message: `From: ${formData.from_name}\nEmail: ${formData.from_email}\nContact: ${formData.contact_number}\n\nMessage:\n${formData.message}`,
-          to_email: 'stallionsupreme02@gmail.com'
+          to_email: 'amazingmahesana02@gmail.com'
         };
 
         await emailjs.send(
@@ -266,8 +266,8 @@ const Contact: React.FC = () => {
                   <EnvelopeIcon className="w-6 h-6 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Email Us</h3>
-                    <a href="mailto:stallionsupreme02@gmail.com" className="opacity-90 hover:opacity-100">
-                      stallionsupreme02@gmail.com
+                    <a href="mailto:amazingmahesana02@gmail.com" className="opacity-90 hover:opacity-100">
+                      amazingmahesana02@gmail.com
                     </a>
                   </div>
                 </div>
