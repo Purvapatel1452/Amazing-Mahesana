@@ -15,7 +15,7 @@ const colorMap: Record<string, [string, string]> = {
   'from-primary to-red-600':    ['#FF5722', '#DC2626'],
   'from-orange-600 to-primary': ['#EA580C', '#FF5722'],
   'from-red-600 to-orange-500': ['#DC2626', '#F97316'],
-  'from-primary to-secondary':  ['#FF5722', '#FF8A65'],
+  'from-primary to-secondary':  ['#FF5722', '#FFAB00'],
   'from-orange-700 to-primary': ['#C2410C', '#FF5722'],
   'from-red-500 to-orange-600': ['#EF4444', '#EA580C'],
 };
