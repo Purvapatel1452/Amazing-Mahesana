@@ -4,9 +4,12 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
+  { name: 'Podcast', href: '#podcast' },
+  { name: 'Team', href: '#team' },
+  { name: 'Portfolio', href: '#portfolio' },
   { name: 'Packages', href: '#packages' },
-  { name: 'Case Studies', href: '#case-studies' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -87,12 +90,12 @@ const Navbar: React.FC = () => {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-5">
             {navLinks.map((link, index) => (
               <motion.a
                 key={link.name}
                 href={link.href}
-                className="text-white/80 hover:text-primary transition-colors duration-300"
+                className="text-white/80 hover:text-primary transition-colors duration-300 text-sm"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}

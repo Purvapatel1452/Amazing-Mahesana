@@ -24,4 +24,23 @@ export interface Testimonial {
   content: string;
   position?: string;
   company?: string;
-} 
+}
+
+export interface TeamMember {
+  name: string;
+  role: string;
+  bio: string;
+}
+
+export interface Achievement {
+  value: string;
+  label: string;
+}
+
+export interface PortfolioItem {
+  clientName: string;
+  category: string;
+  challenge: string;
+  result: string;
+  metrics: { label: string; value: string }[];
+}
