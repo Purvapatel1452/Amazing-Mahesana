@@ -243,7 +243,7 @@ const Contact: React.FC = () => {
                   <button
                     type="submit"
                     disabled={status === 'sending'}
-                    className="flex-1 inline-flex items-center justify-center gap-2 btn bg-primary text-white hover:bg-primary/90 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25 disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none"
+                    className="flex-1 inline-flex items-center justify-center gap-2 btn bg-primary text-black font-bold hover:bg-primary/85 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25 disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none"
                   >
                     {status === 'sending' ? (
                       <>

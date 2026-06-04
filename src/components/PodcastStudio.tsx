@@ -109,7 +109,7 @@ const PodcastStudio: React.FC = () => (
           className="relative rounded-2xl border border-primary/30 p-8 md:p-10 mb-14 overflow-hidden"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-transparent" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,#FF572220_0%,transparent_55%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,#FFAA0020_0%,transparent_55%)]" />
           <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="flex-1">
               <span className="inline-block px-3 py-1 bg-primary/20 border border-primary/30 rounded-full text-primary text-sm font-semibold mb-4">
@@ -123,7 +123,7 @@ const PodcastStudio: React.FC = () => (
                 Book a session and go live to thousands.
               </p>
               <div className="flex flex-wrap gap-3">
-                <a href="#contact" className="inline-flex items-center gap-2 btn bg-primary text-white hover:bg-primary/90 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25">
+                <a href="#contact" className="inline-flex items-center gap-2 btn bg-primary text-black font-bold hover:bg-primary/85 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25">
                   <CalendarDaysIcon className="w-5 h-5" />
                   Book a Session
                 </a>
@@ -252,7 +252,7 @@ const PodcastStudio: React.FC = () => (
             <p className="text-white/55 mb-7 max-w-lg mx-auto">
               Our studio is available 7 days a week. Bring your idea — we'll handle the rest.
             </p>
-            <a href="#contact" className="btn bg-primary text-white hover:bg-primary/90 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25 px-8">
+            <a href="#contact" className="btn bg-primary text-black font-bold hover:bg-primary/85 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25 px-8">
               Book a Session
             </a>
           </div>

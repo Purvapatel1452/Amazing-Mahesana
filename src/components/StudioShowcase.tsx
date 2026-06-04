@@ -231,7 +231,7 @@ const StudioShowcase: React.FC = () => {
             className="relative text-center bg-dark-lighter rounded-2xl border border-primary/25 p-10 overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 pointer-events-none" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,#FF572215_0%,transparent_60%)] pointer-events-none" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,#FFAA0015_0%,transparent_60%)] pointer-events-none" />
             <div className="relative">
               <CameraIcon className="w-12 h-12 text-primary/40 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-white mb-3">Book a Studio Session</h3>
@@ -241,7 +241,7 @@ const StudioShowcase: React.FC = () => {
               <div className="flex flex-wrap items-center justify-center gap-3">
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 btn bg-primary text-white hover:bg-primary/90 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25 px-8"
+                  className="inline-flex items-center gap-2 btn bg-primary text-black font-bold hover:bg-primary/85 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25 px-8"
                 >
                   <CalendarDaysIcon className="w-5 h-5" />
                   Book a Session

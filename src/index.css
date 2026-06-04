@@ -7,14 +7,50 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    color-scheme: dark;
+    /* Prevent iOS font size inflation on landscape rotate */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
-  
+
   body {
-    @apply bg-light text-dark font-sans;
+    @apply bg-dark text-white font-sans;
+    /* Smooth font rendering on all platforms */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Remove tap flash on Android/iOS */
+    -webkit-tap-highlight-color: transparent;
+    /* Prevent horizontal scroll */
+    overflow-x: hidden;
+  }
+
+  /* Safe-area insets for iPhone notch / Dynamic Island */
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading font-bold;
+  }
+
+  /* Prevent images from overflowing on small screens */
+  img, video, svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Minimum touch target for interactive elements */
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Custom scrollbar – desktop only */
+  @media (pointer: fine) {
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #111111; }
+    ::-webkit-scrollbar-thumb { background: #FFAA00; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #FFD000; }
   }
 }
 
@@ -22,37 +58,40 @@
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-12 md:py-20 lg:py-24;
   }
 
+  /* Responsive heading scale: smallest on mobile, largest on desktop */
   .heading-xl {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
   }
 
   .heading-lg {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight;
   }
 
   .heading-md {
-    @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight;
   }
 
   .btn {
     @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    /* Minimum 44px touch target height */
+    min-height: 44px;
   }
-  
+
   .btn-primary {
-    @apply bg-primary text-white hover:bg-opacity-90;
+    @apply bg-primary text-black font-bold hover:bg-primary/85;
   }
-  
+
   .btn-secondary {
-    @apply bg-secondary text-white hover:bg-opacity-90;
+    @apply bg-secondary text-black font-bold hover:bg-secondary/85;
   }
 
   .card {
-    @apply bg-white rounded-xl shadow-lg p-6 transition-transform duration-300 hover:-translate-y-1;
+    @apply bg-dark-lighter rounded-xl border border-primary/15 p-5 md:p-6 transition-transform duration-300 hover:-translate-y-1;
   }
 
   .gradient-text {

@@ -91,13 +91,13 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, index }) => {
       {/* Featured badge — sits at the top edge */}
       {featured && (
         <div className="absolute top-0 inset-x-0 flex justify-center pointer-events-none">
-          <span className="bg-primary text-white text-xs font-bold tracking-widest uppercase px-6 py-1.5 rounded-b-xl">
+          <span className="bg-primary text-black text-xs font-bold tracking-widest uppercase px-6 py-1.5 rounded-b-xl">
             Most Popular
           </span>
         </div>
       )}
 
-      <div className={`flex flex-col flex-1 p-8 ${featured ? 'pt-14' : ''}`}>
+      <div className={`flex flex-col flex-1 p-5 md:p-8 ${featured ? 'pt-12 md:pt-14' : ''}`}>
 
         {/* Tier chip */}
         <span
@@ -149,7 +149,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, index }) => {
           href="#contact"
           className={`flex items-center justify-center gap-2 w-full py-3 px-6 rounded-xl text-sm font-semibold transition-all duration-300 group ${
             featured
-              ? 'bg-primary text-white hover:bg-primary/90 shadow-lg shadow-primary/30 hover:shadow-primary/50'
+              ? 'bg-primary text-black font-bold hover:bg-primary/85 shadow-lg shadow-primary/30 hover:shadow-primary/50'
               : 'bg-white/5 text-white border border-white/15 hover:bg-white/10 hover:border-primary/45'
           }`}
         >

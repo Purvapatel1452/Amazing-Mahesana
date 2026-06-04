@@ -52,12 +52,12 @@ const App: React.FC = () => {
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-dark to-dark-light relative overflow-hidden">
         {/* Geometric pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(30deg,#FF5722_12%,transparent_12.5%,transparent_87%,#FF5722_87.5%,#FF5722),linear-gradient(150deg,#FF5722_12%,transparent_12.5%,transparent_87%,#FF5722_87.5%,#FF5722),linear-gradient(30deg,#FF5722_12%,transparent_12.5%,transparent_87%,#FF5722_87.5%,#FF5722),linear-gradient(150deg,#FF5722_12%,transparent_12.5%,transparent_87%,#FF5722_87.5%,#FF5722),linear-gradient(60deg,#FF572277_25%,transparent_25.5%,transparent_75%,#FF572277_75%,#FF572277)] bg-[length:80px_140px] opacity-5 pointer-events-none" />
+        <div className="absolute inset-0 bg-[linear-gradient(30deg,#FFAA00_12%,transparent_12.5%,transparent_87%,#FFAA00_87.5%,#FFAA00),linear-gradient(150deg,#FFAA00_12%,transparent_12.5%,transparent_87%,#FFAA00_87.5%,#FFAA00),linear-gradient(30deg,#FFAA00_12%,transparent_12.5%,transparent_87%,#FFAA00_87.5%,#FFAA00),linear-gradient(150deg,#FFAA00_12%,transparent_12.5%,transparent_87%,#FFAA00_87.5%,#FFAA00),linear-gradient(60deg,#FFAA0077_25%,transparent_25.5%,transparent_75%,#FFAA0077_75%,#FFAA0077)] bg-[length:80px_140px] opacity-5 pointer-events-none" />
         {/* Glow orbs */}
         <div className="absolute top-1/4 left-[10%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-1/4 right-[10%] w-[350px] h-[350px] bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="container relative z-10 py-28">
+        <div className="container relative z-10 py-24 md:py-28">
           <div className="text-center max-w-4xl mx-auto">
 
             {/* Badge */}
@@ -85,7 +85,7 @@ const App: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-2xl md:text-3xl font-bold gradient-text mb-6"
+              className="text-xl md:text-2xl lg:text-3xl font-bold gradient-text mb-6"
             >
               Social Media Agency
             </motion.p>
@@ -95,7 +95,7 @@ const App: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-lg md:text-xl text-white/65 mb-10 max-w-2xl mx-auto leading-relaxed"
+              className="text-base md:text-lg lg:text-xl text-white/65 mb-10 max-w-2xl mx-auto leading-relaxed"
             >
               We don't just post — we build brands, drive growth, and create content that stops the scroll and converts the audience.
             </motion.p>
@@ -109,7 +109,7 @@ const App: React.FC = () => {
             >
               <a
                 href="#services"
-                className="btn bg-primary text-white hover:bg-primary/90 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25 px-8 py-3 text-base"
+                className="btn bg-primary text-black font-bold hover:bg-primary/90 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25 px-8 py-3 text-base"
               >
                 Explore Services
               </a>
@@ -204,10 +204,10 @@ const App: React.FC = () => {
         <Packages />
 
         {/* Taglines Section */}
-        <div className="my-20 relative">
-          <div className="absolute inset-0 bg-primary/10 -skew-y-3 transform"></div>
-          <div className="relative py-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
+        <div className="my-12 md:my-20 relative overflow-hidden">
+          <div className="absolute inset-0 bg-primary/8 -skew-y-2 transform" />
+          <div className="relative py-10 md:py-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-5xl mx-auto px-4">
               {taglines.map((tagline, index) => (
                 <motion.div
                   key={tagline.text}
@@ -215,12 +215,12 @@ const App: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex items-center space-x-4 p-8 bg-white rounded-lg shadow-lg border border-primary/20 hover:border-primary/40 transition-all duration-300"
+                  className="flex items-center gap-4 p-5 md:p-6 bg-dark-lighter rounded-xl border border-primary/20 hover:border-primary/50 transition-all duration-300"
                 >
-                  <div className="p-4 bg-primary rounded-full text-white flex-shrink-0">
+                  <div className="p-3 bg-primary rounded-xl text-black flex-shrink-0">
                     {tagline.icon}
                   </div>
-                  <p className="text-xl font-semibold text-primary">
+                  <p className="text-base md:text-lg font-semibold text-white/90 leading-snug">
                     {tagline.text}
                   </p>
                 </motion.div>

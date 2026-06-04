@@ -25,7 +25,7 @@ const ServiceCard: React.FC<{ service: ServiceData; index: number }> = ({ servic
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, delay: index * 0.08 }}
-    className="group relative bg-dark-lighter rounded-2xl border border-primary/15 hover:border-primary/50 transition-all duration-300 overflow-hidden p-7 flex flex-col"
+    className="group relative bg-dark-lighter rounded-2xl border border-primary/15 hover:border-primary/50 transition-all duration-300 overflow-hidden p-5 md:p-7 flex flex-col"
   >
     <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
     <div className="relative flex flex-col h-full">
@@ -134,7 +134,7 @@ const Services: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="group relative bg-dark-lighter rounded-2xl border border-primary/15 hover:border-primary/50 transition-all duration-300 overflow-hidden p-8"
+            className="group relative bg-dark-lighter rounded-2xl border border-primary/15 hover:border-primary/50 transition-all duration-300 overflow-hidden p-5 md:p-8"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
@@ -148,7 +148,7 @@ const Services: React.FC = () => {
                   <SparklesIcon className="w-3.5 h-3.5" />
                   Fully Managed
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors duration-300">
                   Account Handling
                 </h3>
                 <p className="text-white/55 text-sm leading-relaxed">

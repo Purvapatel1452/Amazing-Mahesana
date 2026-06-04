@@ -36,7 +36,7 @@ const About: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <motion.span
               initial={{ opacity: 0, y: -8 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -47,14 +47,14 @@ const About: React.FC = () => {
               About Us
             </motion.span>
             <h2 className="heading-lg text-white mb-4">
-              The Story Behind<br />Amazing Mahesana
+              The Story Behind Amazing Mahesana
             </h2>
-            <p className="text-white/60 text-lg max-w-2xl mx-auto">
+            <p className="text-white/60 text-base md:text-lg max-w-2xl mx-auto">
               A premium digital media agency built with one mission — to make every brand in Mahesana impossible to ignore.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-start">
 
             {/* Left — Founder Card */}
             <motion.div
@@ -62,7 +62,7 @@ const About: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative bg-dark-lighter rounded-2xl border border-primary/20 p-8 overflow-hidden"
+              className="relative bg-dark-lighter rounded-2xl border border-primary/20 p-5 md:p-8 overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -120,14 +120,14 @@ const About: React.FC = () => {
               className="space-y-8"
             >
               <div>
-                <h3 className="text-2xl font-bold text-white mb-3">Our Vision</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-3">Our Vision</h3>
                 <p className="text-white/60 leading-relaxed">
                   To become the most trusted digital media partner for businesses across Gujarat — starting right here in Mahesana. We believe every local business deserves world-class content, strategy, and real results.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-white mb-3">What We Do</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-3">What We Do</h3>
                 <p className="text-white/60 leading-relaxed">
                   From social media management and reel production to podcast recording and influencer campaigns — we handle your complete digital presence. Our studio, team, and tools exist for one purpose: making your brand grow.
                 </p>
@@ -162,7 +162,7 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.4 }}
-                className="inline-flex items-center gap-2 btn bg-primary text-white hover:bg-primary/90 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
+                className="inline-flex items-center gap-2 btn bg-primary text-black font-bold hover:bg-primary/85 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
               >
                 Work With Us
               </motion.a>
