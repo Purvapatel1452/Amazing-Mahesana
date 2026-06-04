@@ -1,11 +1,18 @@
 {
   "short_name": "Amazing Mahesana",
-  "name": "Amazing Mahesana",
+  "name": "Amazing Mahesana – Digital Media Agency",
+  "description": "Mahesana's #1 premium digital media agency – social media, reels, podcast & brand promotions.",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "amazingMehsana.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
     },
     {
       "src": "logo192.png",
@@ -18,8 +25,13 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait",
+  "theme_color": "#FFAA00",
+  "background_color": "#080808",
+  "lang": "en",
+  "scope": "/",
+  "categories": ["business", "productivity"],
+  "screenshots": []
 }

@@ -1,3 +1,11 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Block access to build artifacts
+Disallow: /static/js/*.map
+
+# Sitemap location
+Sitemap: https://amazingmahesana.com/sitemap.xml
+
+# Crawl delay (optional – helps avoid server overload)
+Crawl-delay: 1
