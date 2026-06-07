@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm /Users/purvapatel/Desktop/AmazingMahesana/Amazing-Mahesana/src/components/PodcastStudio.tsx /Users/purvapatel/Desktop/AmazingMahesana/Amazing-Mahesana/src/components/StudioShowcase.tsx)",
+      "WebFetch(domain:nominatim.openstreetmap.org)"
+    ],
+    "additionalDirectories": [
+      "/Users/purvapatel/Desktop/AmazingMahesana/Amazing-Mahesana/src/components"
+    ]
+  }
+}

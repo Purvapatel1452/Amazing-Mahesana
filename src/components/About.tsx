@@ -105,7 +105,9 @@ const About: React.FC = () => {
                 <div>
                   <p className="text-white text-sm font-semibold mb-0.5">Our Studio & Office</p>
                   <p className="text-white/45 text-xs leading-relaxed">
-                    S/2 Kanku Complex, Opp. Welcome Party Plot, Modhera Road, Mehsana
+                    Amazing Mahesana (Krevon Media Agency)<br />
+                    Silicon Sponta, 46 Radhanpur Rd,<br />
+                    Bansari Twp, Mehsana, Gujarat 384005
                   </p>
                 </div>
               </div>

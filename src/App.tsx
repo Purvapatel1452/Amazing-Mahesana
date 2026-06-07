@@ -2,12 +2,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Services from './components/Services';
-import PodcastStudio from './components/PodcastStudio';
 import CityMedia from './components/CityMedia';
-import Collaborations from './components/Collaborations';
 import Brands from './components/Brands';
 import Team from './components/Team';
-import StudioShowcase from './components/StudioShowcase';
 import Portfolio from './components/Portfolio';
 import Packages from './components/Packages';
 import Achievements from './components/Achievements';
@@ -21,7 +18,7 @@ import {
   SparklesIcon,
   ChevronDownIcon,
   UserGroupIcon,
-  MicrophoneIcon,
+  FilmIcon,
   BuildingOffice2Icon,
 } from '@heroicons/react/24/outline';
 
@@ -156,7 +153,7 @@ const App: React.FC = () => {
                 { value: '50+', label: 'Accounts Managed', icon: <ChartBarIcon className="w-5 h-5 text-primary/60" /> },
                 { value: '20+', label: 'Brand Collaborations', icon: <BuildingOffice2Icon className="w-5 h-5 text-primary/60" /> },
                 { value: '10L+', label: 'Influencer Reach', icon: <UserGroupIcon className="w-5 h-5 text-primary/60" /> },
-                { value: '10+', label: 'Podcast Episodes', icon: <MicrophoneIcon className="w-5 h-5 text-primary/60" /> },
+                { value: '500+', label: 'Reels Created', icon: <FilmIcon className="w-5 h-5 text-primary/60" /> },
               ].map((stat) => (
                 <div
                   key={stat.label}
@@ -193,12 +190,9 @@ const App: React.FC = () => {
       <main>
         <About />
         <Services />
-        <PodcastStudio />
         <CityMedia />
-        <Collaborations />
         <Brands />
         <Team />
-        <StudioShowcase />
         <Portfolio />
         <Achievements />
         <Packages />

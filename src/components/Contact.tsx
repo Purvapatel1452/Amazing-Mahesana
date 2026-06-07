@@ -56,8 +56,8 @@ const channels = [
   },
   {
     label: 'Location',
-    value: 'S/2 Kanku Complex, Modhera Road, Mahesana',
-    href: 'https://maps.google.com/?q=S/2+Kanku+Complex+Modhera+Road+Mahesana+Gujarat',
+    value: 'Silicon Sponta, 46 Radhanpur Rd, Bansari Twp, Mehsana',
+    href: 'https://maps.google.com/?q=Silicon+Sponta,+46,+Radhanpur+Rd,+Bansari+Twp,+Mehsana,+Gujarat+384005',
     icon: <MapPinIcon className="w-5 h-5" />,
     color: 'text-blue-400',
     bg: 'bg-blue-500/10',
@@ -339,7 +339,7 @@ const Contact: React.FC = () => {
               >
                 <iframe
                   title="Amazing Mahesana Location"
-                  src="https://maps.google.com/maps?q=Kanku+Complex+Modhera+Road+Mahesana+Gujarat+India&output=embed&z=15"
+                  src="https://maps.google.com/maps?q=Silicon+Sponta,+46,+Radhanpur+Rd,+Bansari+Twp,+Mehsana,+Gujarat+384005&output=embed&z=17"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }}

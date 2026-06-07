@@ -37,17 +37,17 @@ const socials = [
 const services = [
   { label: 'Social Media Management', href: '#services' },
   { label: 'Reels & Video Editing', href: '#services' },
-  { label: 'Podcast Production', href: '#podcast' },
-  { label: 'Influencer Marketing', href: '#collaborations' },
-  { label: 'Brand Promotions', href: '#brands' },
+  { label: 'Influencer Marketing', href: '#services' },
+  { label: 'Brand Promotions', href: '#services' },
+  { label: 'Content Creation', href: '#services' },
   { label: 'Account Handling', href: '#services' },
 ];
 
 const quickLinks = [
   { label: 'About Us', href: '#about' },
   { label: 'Our Team', href: '#team' },
-  { label: 'Studio Showcase', href: '#studio' },
   { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Brands', href: '#brands' },
   { label: 'Packages', href: '#packages' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -170,8 +170,9 @@ const Footer: React.FC = () => {
                   <div className="flex items-start gap-3">
                     <MapPinIcon className="w-4 h-4 text-primary/60 mt-0.5 flex-shrink-0" />
                     <span className="text-white/45 text-sm leading-relaxed">
-                      S/2 Kanku Complex, Opp. Welcome Party Plot,<br />
-                      Modhera Road, Mahesana, Gujarat
+                      Amazing Mahesana (Krevon Media Agency)<br />
+                      Silicon Sponta, 46 Radhanpur Rd,<br />
+                      Bansari Twp, Mehsana, Gujarat 384005
                     </span>
                   </div>
                 </li>

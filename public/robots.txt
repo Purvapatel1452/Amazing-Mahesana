@@ -5,7 +5,7 @@ Allow: /
 Disallow: /static/js/*.map
 
 # Sitemap location
-Sitemap: https://amazingmahesana.com/sitemap.xml
+Sitemap: https://www.amazingmahesana.in/sitemap.xml
 
 # Crawl delay (optional – helps avoid server overload)
 Crawl-delay: 1
