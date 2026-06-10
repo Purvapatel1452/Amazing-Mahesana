@@ -9,7 +9,6 @@ import {
   VideoCameraIcon,
   ClipboardDocumentListIcon,
   CheckCircleIcon,
-  ArrowRightIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
@@ -38,10 +37,6 @@ const ServiceCard: React.FC<{ service: ServiceData; index: number }> = ({ servic
       <p className="text-white/55 text-sm leading-relaxed flex-1">
         {service.description}
       </p>
-      <div className="mt-5 flex items-center gap-1 text-primary text-xs font-semibold opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">
-        <span>Explore</span>
-        <ArrowRightIcon className="w-3.5 h-3.5" />
-      </div>
     </div>
   </motion.div>
 );

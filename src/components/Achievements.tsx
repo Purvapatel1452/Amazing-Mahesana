@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import {
   TrophyIcon,
-  StarIcon,
   ChartBarIcon,
   UserGroupIcon,
   FilmIcon,
@@ -45,33 +44,9 @@ const milestones = [
   { year: '2022', title: 'Studio Launched',          desc: 'Opened Mahesana\'s first professional content studio on Modhera Road.'      },
   { year: '2023', title: '500+ Reels Milestone',    desc: 'Crossed 500 reels produced for clients across multiple industries.'          },
   { year: '2024', title: '50+ Clients Strong',      desc: 'Grew to serve 50+ active brands from F&B to Real Estate and beyond.'        },
-  { year: '2025', title: 'Premium Agency Status',   desc: 'Recognized as Mahesana\'s go-to premium digital media agency.'              },
+  { year: '2025', title: 'Gujarat\'s 1st Award-Winning City Page', desc: 'Amazing Mahesana won Gujarat\'s 1st City Page Award — officially recognized as the state\'s top informative city digital page.' },
 ];
 
-/* ── Testimonials ── */
-const testimonials = [
-  {
-    quote: 'Amazing Mahesana transformed our social media completely. Our sales grew 40% in just three months of working together.',
-    name: 'Jignesh Patel',
-    role: 'Owner, Mahesana Sweets',
-    initials: 'JP',
-    gradient: 'from-orange-500 to-red-600',
-  },
-  {
-    quote: 'Their reels are genuinely viral-worthy. The team understands what content works and delivers it consistently every week.',
-    name: 'Dhara Shah',
-    role: 'Founder, Fashion Hub',
-    initials: 'DS',
-    gradient: 'from-orange-600 to-primary',
-  },
-  {
-    quote: 'The podcast studio is world-class. We recorded and launched in one day — the quality blew our audience away.',
-    name: 'Manish Desai',
-    role: 'MD, TechMart Mahesana',
-    initials: 'MD',
-    gradient: 'from-red-600 to-orange-500',
-  },
-];
 
 /* ── Stat Card ── */
 const StatCard: React.FC<{ stat: typeof stats[0]; index: number; active: boolean }> = ({ stat, index, active }) => {
@@ -204,49 +179,6 @@ const Achievements: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Testimonials */}
-          <div>
-            <div className="flex items-center gap-3 mb-8 justify-center">
-              <StarIcon className="w-6 h-6 text-primary" />
-              <h3 className="text-xl font-bold text-white">What Clients Say</h3>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {testimonials.map((t, index) => (
-                <motion.div
-                  key={t.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="group bg-dark-lighter rounded-2xl border border-primary/15 hover:border-primary/40 hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col"
-                >
-                  {/* Stars */}
-                  <div className="flex gap-1 mb-4">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <StarIcon key={i} className="w-4 h-4 text-primary fill-primary" style={{ fill: 'currentColor' }} />
-                    ))}
-                  </div>
-
-                  {/* Quote */}
-                  <p className="text-white/70 text-sm leading-relaxed flex-1 mb-5">
-                    "{t.quote}"
-                  </p>
-
-                  {/* Author */}
-                  <div className="flex items-center gap-3">
-                    <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${t.gradient} flex items-center justify-center text-white text-xs font-bold flex-shrink-0`}>
-                      {t.initials}
-                    </div>
-                    <div>
-                      <p className="text-white font-semibold text-sm">{t.name}</p>
-                      <p className="text-white/40 text-xs">{t.role}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
 
         </motion.div>
       </div>

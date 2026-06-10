@@ -19,9 +19,9 @@ interface PricingPlan {
 
 const plans: PricingPlan[] = [
   {
-    name: 'Prime',
+    name: 'Starter Growth',
     tier: 'Starter',
-    tagline: 'The ideal starting point for businesses stepping into the digital space.',
+    tagline: 'The ideal starting point for businesses ready to build a consistent online presence.',
     icon: <RocketLaunchIcon className="w-5 h-5 text-primary" />,
     features: [
       '8 Reels per month (shoot + editing)',
@@ -34,7 +34,7 @@ const plans: PricingPlan[] = [
     ],
   },
   {
-    name: 'Signature',
+    name: 'Business Growth',
     tier: 'Most Popular',
     tagline: 'Built for brands serious about consistent growth and a stronger digital presence.',
     icon: <SparklesIcon className="w-5 h-5 text-primary" />,
@@ -51,7 +51,7 @@ const plans: PricingPlan[] = [
     ],
   },
   {
-    name: 'Pinnacle',
+    name: 'Brand Authority',
     tier: 'Premium',
     tagline: 'For ambitious brands ready to lead their market and dominate every platform.',
     icon: <TrophyIcon className="w-5 h-5 text-primary" />,
@@ -64,6 +64,8 @@ const plans: PricingPlan[] = [
       'Influencer collaboration support',
       'Brand positioning strategy',
       'Priority support & dedicated manager',
+      'Shopify & Amazon store management',
+      'E-commerce product listing & ads',
     ],
   },
 ];
@@ -153,7 +155,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, index }) => {
               : 'bg-white/5 text-white border border-white/15 hover:bg-white/10 hover:border-primary/45'
           }`}
         >
-          Get Started
+          {featured ? 'Schedule a Consultation' : 'Request Proposal'}
           <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
         </a>
       </div>
@@ -184,7 +186,7 @@ const Packages: React.FC = () => {
             </motion.span>
             <h2 className="heading-lg text-white mb-4">Choose Your Growth Plan</h2>
             <p className="text-white/60 text-lg max-w-2xl mx-auto">
-              Flexible packages designed to match your brand's ambitions — whether you're just starting out or ready to dominate.
+              Flexible packages designed for businesses at every stage — from building your first digital presence to dominating your market.
             </p>
           </div>
 
@@ -203,13 +205,13 @@ const Packages: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-12 text-center"
           >
-            <p className="text-white/35 text-sm">
-              All packages include content strategy consultation.{' '}
+            <p className="text-white/50 text-sm max-w-lg mx-auto leading-relaxed">
+              Every business is unique. We build customized marketing solutions based on your goals, industry, and target audience.{' '}
               <a
                 href="#contact"
-                className="text-primary hover:text-primary/80 underline underline-offset-2 transition-colors"
+                className="text-primary hover:text-primary/80 underline underline-offset-2 transition-colors font-medium"
               >
-                Need a custom plan? Let's talk.
+                Get a custom proposal →
               </a>
             </p>
           </motion.div>

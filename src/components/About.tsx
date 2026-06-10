@@ -82,7 +82,7 @@ const About: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Nikhil Patel</h3>
-                  <p className="text-primary text-sm font-medium">Founder & Creative Director</p>
+                  <p className="text-primary text-sm font-medium">Founder</p>
                   <p className="text-white/35 text-xs mt-0.5">Amazing Mahesana</p>
                 </div>
               </div>
@@ -106,8 +106,8 @@ const About: React.FC = () => {
                   <p className="text-white text-sm font-semibold mb-0.5">Our Studio & Office</p>
                   <p className="text-white/45 text-xs leading-relaxed">
                     Amazing Mahesana (Krevon Media Agency)<br />
-                    Silicon Sponta, 46 Radhanpur Rd,<br />
-                    Bansari Twp, Mehsana, Gujarat 384005
+                    SF-215, Silicon Sponta,<br />
+                    Radhanpur Road, Mehsana, Gujarat 384002
                   </p>
                 </div>
               </div>
@@ -131,8 +131,31 @@ const About: React.FC = () => {
               <div>
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-3">What We Do</h3>
                 <p className="text-white/60 leading-relaxed">
-                  From social media management and reel production to podcast recording and influencer campaigns — we handle your complete digital presence. Our studio, team, and tools exist for one purpose: making your brand grow.
+                  From social media management and reel production to influencer campaigns and brand strategy — we handle your complete digital presence. Our in-house team of 11 creators, editors, and strategists exist for one purpose: making your brand grow.
                 </p>
+              </div>
+
+              {/* Krevon Media callout */}
+              <div className="flex items-start gap-4 p-4 bg-dark-lighter rounded-xl border border-white/10 hover:border-primary/30 transition-all duration-300">
+                <div className="w-10 h-10 rounded-xl overflow-hidden border border-white/15 flex-shrink-0 bg-dark flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">K</span>
+                </div>
+                <div>
+                  <p className="text-white font-semibold text-sm mb-0.5">
+                    Powered by{' '}
+                    <a
+                      href="https://www.instagram.com/krevon.media"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/80 transition-colors"
+                    >
+                      Krevon Media Agency
+                    </a>
+                  </p>
+                  <p className="text-white/45 text-xs leading-relaxed">
+                    Our in-house creative production division. Branding · Content · Marketing · Podcast · Ads — all under one roof in Mehsana.
+                  </p>
+                </div>
               </div>
 
               {/* Key highlights */}

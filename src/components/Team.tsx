@@ -42,14 +42,6 @@ const teamMembers: TeamMemberData[] = [
     instagram: '#',
   },
   {
-    name: 'Rushit Mishtri',
-    role: 'Video Editor & Animation Artist',
-    bio: 'Transforms raw footage into scroll-stopping reels with expert editing and custom animations that elevate every brand story.',
-    initials: 'RM',
-    gradient: 'from-primary to-secondary',
-    instagram: '#',
-  },
-  {
     name: 'Boni Patel',
     role: 'Cinematographer & Editor',
     bio: 'Cinematic-quality shots paired with sharp editing. Boni crafts visual narratives that leave a lasting impression on every audience.',
